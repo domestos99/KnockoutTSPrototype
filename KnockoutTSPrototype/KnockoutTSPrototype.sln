@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutTSPrototype", "KnockoutTSPrototype\KnockoutTSPrototype.csproj", "{E82E8C89-5E4C-4026-A62F-3810B72F0ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnockoutTSPrototype.Data", "KnockoutTSPrototype.Data\KnockoutTSPrototype.Data.csproj", "{515244D0-9023-469D-8FBE-DFB51AC6A367}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E82E8C89-5E4C-4026-A62F-3810B72F0ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82E8C89-5E4C-4026-A62F-3810B72F0ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82E8C89-5E4C-4026-A62F-3810B72F0ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82E8C89-5E4C-4026-A62F-3810B72F0ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515244D0-9023-469D-8FBE-DFB51AC6A367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515244D0-9023-469D-8FBE-DFB51AC6A367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515244D0-9023-469D-8FBE-DFB51AC6A367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515244D0-9023-469D-8FBE-DFB51AC6A367}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D6F07A4-2165-46AF-96DF-588CB52CCE4F}
+	EndGlobalSection
+EndGlobal
