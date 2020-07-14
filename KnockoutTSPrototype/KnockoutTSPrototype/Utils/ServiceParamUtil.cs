@@ -23,6 +23,18 @@ namespace KnockoutTSPrototype.Utils
             return true;
         }
 
+        public static string GetParamStringOptionalValue(HttpContext context, string name, string defaultValue)
+        {
+            var value = context.Request[name];
+
+            if (value == null)
+            {
+                return defaultValue;
+            }
+
+            return value;
+        }
+
         public static void WriteErrorResponse(HttpContext context, string message, object data = null)
         {
             var result = new JsonResponse()

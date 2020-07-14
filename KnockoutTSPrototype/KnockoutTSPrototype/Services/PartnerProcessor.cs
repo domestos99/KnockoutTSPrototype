@@ -21,6 +21,7 @@ namespace KnockoutTSPrototype.Services
             Partner p1 = new Partner();
             p1.Name = "John Doe";
             p1.City = "Praha";
+
             Partner p2 = new Partner();
             p2.Name = "Jane Doe";
             p2.City = "Brno";
@@ -30,11 +31,16 @@ namespace KnockoutTSPrototype.Services
             // Create dummy data
 
             // Some filters
-            //var resultWhere = ps.Where(x => x.Name.Contains(dto.Name));
-            //var result = resultWhere.ToList();
-                
+            // x => x.Name.Contains(dto.Name)
+            var resultWhere = ps.Where((partner, i) =>
+            {
+                return partner.Name.Contains(dto.Name);
 
-            WriteSuccessResponse(context, "", ps);
+            });
+            var result = resultWhere.ToList();
+
+
+            WriteSuccessResponse(context, "", result);
         }
     }
 }

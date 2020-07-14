@@ -22,13 +22,11 @@ namespace SwaggerGenerator
                 AllowReferencesWithProperties = true
             };
 
-            Partner p = new Partner();
-            var as1 = p.GetType().Assembly;
+            var as1 = new Partner().GetType().Assembly;
 
-            var document = OpenApiDocumentGenerator.GetOpenApiDocumentSepareted(settins, as1);
+            var documents = OpenApiDocumentGenerator.GetOpenApiDocumentSepareted(settins, as1);
 
             //var json = document.ToJson(SchemaType.Swagger2);
-
             //File.WriteAllText("swagger.json", json);
 
             var tsSettings = new TypeScriptClientGeneratorSettings
@@ -38,15 +36,22 @@ namespace SwaggerGenerator
                 UseTransformResultMethod = true,
                 UseTransformOptionsMethod = true,
                 ClientBaseClass = "MyClassBase",
-
+                
             };
 
-            foreach (var doc in document)
+            foreach (var doc in documents)
             {
                 var tsGenerator = new TypeScriptClientGenerator(doc, tsSettings);
                 var tsCode = tsGenerator.GenerateFile();
                 File.WriteAllText("ts\\" + Guid.NewGuid().ToString("N") + ".ts", tsCode);
             }
+
+            var document = OpenApiDocumentGenerator.GetOpenApiDocument(settins, as1);
+
+            var tsGenerator2 = new TypeScriptClientGenerator(document, tsSettings);
+            var tsCode2 = tsGenerator2.GenerateFile();
+            File.WriteAllText("ts\\api.ts", tsCode2);
+
 
         }
     }

@@ -263,8 +263,12 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="ts\src\dtos\actionDtoBase.ts" />
+    <TypeScriptCompile Include="ts\src\dtos\partnerSearchDto.ts" />
     <TypeScriptCompile Include="ts\src\index.ts" />
+    <TypeScriptCompile Include="ts\src\models\api.ts" />
     <TypeScriptCompile Include="ts\src\models\partner.ts" />
+    <TypeScriptCompile Include="ts\src\utils\dataUtils.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

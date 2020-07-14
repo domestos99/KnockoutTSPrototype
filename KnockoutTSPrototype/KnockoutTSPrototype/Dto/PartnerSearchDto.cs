@@ -22,8 +22,8 @@ namespace KnockoutTSPrototype.Dto
             var result = new PartnerSearchDto();
             bool ok = true;
 
-            string name;
-            ok &= ServiceParamUtil.GetParamString(context, "Name", out name);
+            string name = ServiceParamUtil.GetParamStringOptionalValue(context, "Name", "");
+            //ok &= ServiceParamUtil.GetParamString(context, "Name", out name);
             result.Name = name;
 
 

@@ -9,30 +9,18 @@
         <div id="testManager">
             <div class="row">
                 <div class="col-sm-6">
-
-                    <%--<p data-bind="text: $root.name"></p>--%>
                     
-                    Test název:
-                    <p data-bind="text: name"></p>
-                    <br />
+                    <input type="text" data-bind="value: searchName" />
+                    Search text: <b data-bind="text: searchName"></b>
                     
-                    
-                    <hr />
-                    
-                    <input type="text" data-bind="value: inputText" />
-                    
-                    
-                    Input text: <b data-bind="text: inputText"></b>
+                    <a class="btn btn-primary"
+                       data-bind="click: search">Search</a>
 
                     
                     <hr />
-                    Délka:
+
+                    Počet:
                     <p data-bind="text: partner().length"></p>
-                    Délka 2:
-                    <p data-bind="text: bLength"></p>
-
-                    <br />
-
                     <table class="table">
                         <thead>
                             <tr>

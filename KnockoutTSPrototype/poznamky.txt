@@ -1,0 +1,6 @@
+﻿Napsat si vlastní generátor na TS soubory, protože NSwag neumí observable
+-přidat do generátoru fromJson jako pole
+
+
+Generování TS tříd podle namespace + další filtry?
+
