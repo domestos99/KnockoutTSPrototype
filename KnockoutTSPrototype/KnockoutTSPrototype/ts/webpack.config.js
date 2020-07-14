@@ -4,7 +4,8 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    app: './src/index.ts'
+    default: './src/default.ts',
+    about: './src/about.ts'
   },
   devtool: 'source-map', // Generate separate source map files
   devServer: {

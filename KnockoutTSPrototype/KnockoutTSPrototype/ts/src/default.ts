@@ -1,9 +1,8 @@
 import * as ko from 'knockout';
 import { Observable, ObservableArray } from 'knockout';
 
-import { Partner } from "./models/api";
+import { Partner } from "./models/partner";
 import { PartnerSearchDto } from "./dtos/partnerSearchDto";
-import { DataUtils } from "./utils/dataUtils";
 
 const $ = require('jquery');
 
@@ -39,7 +38,7 @@ class AppViewModel {
       reqPar,
       function (data) {
         if (data.Success) {
-          avm.partner(DataUtils.fromJSArrayPartner(data.Data));
+          avm.partner(Partner.fromJSArray(data.Data));
         } else {
           alert(data.Message);
         }

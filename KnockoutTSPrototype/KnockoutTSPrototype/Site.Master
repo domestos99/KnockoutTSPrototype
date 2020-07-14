@@ -19,6 +19,9 @@
     <%--<link rel="stylesheet" href="/Content/font-awesome.min.css">--%>
     <%--<script src="/Scripts/knockout-3.5.0.js"></script>--%>
     <%--<script src="/Scripts/knockstrap.min.js"></script>--%>
+    
+    <link rel="stylesheet" href="admin-lte/css/AdminLTE.min.css"/>
+
 
 </head>
 <body>
@@ -40,6 +43,9 @@
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Path="~/Scripts/knockout-3.5.0.js" />
                 <asp:ScriptReference Path="~/Scripts/knockstrap.min.js" />
+                <asp:ScriptReference Path="~/admin-lte/js/adminlte.min.js" />
+
+
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>

@@ -46,6 +46,6 @@
     </section>
 
 
-    <script type="text/javascript" src="ts/dist/app.js"></script>
+    <script type="text/javascript" src="ts/dist/default.js"></script>
 
 </asp:Content>
