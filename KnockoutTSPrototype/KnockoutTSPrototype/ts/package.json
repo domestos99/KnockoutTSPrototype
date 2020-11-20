@@ -4,7 +4,7 @@
   "description": "An example of using TypeScript and Knockout’s type definitions to create view models, components and bindings that are strongly typed.",
   "private": true,
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "knockout": "^3.5.1"
   },
   "devDependencies": {
